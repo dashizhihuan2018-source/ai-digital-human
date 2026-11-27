@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130e10">
+  <meta name="description" content="走进美杜莎的实时三维舞台，自由旋转缩放，点演喜怒哀乐与日常动作。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="美杜莎·数字人">
+  <meta property="og:description" content="美杜莎实时三维舞台，支持旋转缩放和七种动作点播。">
+  <meta property="og:url" content="https://dashizhihuan2018-source.github.io/ai-digital-human/medusa/">
+  <meta property="og:image" content="https://dashizhihuan2018-source.github.io/ai-digital-human/medusa/assets/social.jpg">
+  <link rel="canonical" href="https://dashizhihuan2018-source.github.io/ai-digital-human/medusa/">
+  <title>美杜莎·数字人</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="preload" href="assets/showcase-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="motion.js" defer></script>
+  <script src="assets/hero-viewer.bundle.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要内容</a>
+  <header class="topbar" id="top">
+    <div class="wrap nav">
+      <a class="wordmark" href="#top" aria-label="美杜莎·数字人首页"><span class="mark" aria-hidden="true"></span><strong>美杜莎·数字人</strong></a>
+      <nav aria-label="主导航"><a href="#experience">3D 舞台</a><a class="nav-craft" href="#craft">制作方法</a><a href="#skills">技能下载</a></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> 全屋智能家居 · 桌面助理</p>
+          <h1 id="hero-title">美杜莎</h1>
+          <p class="hero-description">从起舞到垂首，同一个角色用眉眼、手势和衣袖表达喜怒哀乐。</p>
+          <a class="button primary" href="#experience">进入 3D 舞台 <span aria-hidden="true">↓</span></a>
+        </div>
+        <picture class="hero-art">
+          <source media="(max-width: 620px)" srcset="assets/medusa/hero-v3-mobile.webp" width="760" height="941">
+          <img src="assets/medusa/hero-v3-generated.webp" width="1672" height="941"
+            alt="以美杜莎 V3 三维角色为参考生成的主视觉，红金袍服与金色冠饰" fetchpriority="high">
+        </picture>
+      </div>
+    </section>
+
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="experience-heading">
+          <h2 id="experience-title">美杜莎舞台<span class="period">。</span></h2>
+          <p>点选动作，拖动转身，用滚轮或双指拉近。</p>
+        </div>
+        <figure class="model-viewer" data-view="poster">
+          <div class="model-frame">
+            <div class="model-stage">
+              <img class="model-poster" src="assets/medusa/portrait.webp" width="590" height="872"
+                alt="美杜莎身着红金袍服，头戴金色冠饰" loading="lazy">
+              <canvas class="model-canvas" data-model-url="assets/medusa/stage.glb" tabindex="-1" aria-hidden="true"
+                aria-label="美杜莎实时三维舞台" aria-describedby="model-help"></canvas>
+              <p id="model-help" class="sr-only">使用方向键旋转视角，加号和减号缩放。舞台下方可以点选动作。</p>
+            </div>
+            <div class="model-controls" role="group" aria-label="舞台视角" hidden>
+              <button type="button" data-zoom="in" aria-label="放大" title="放大">+</button>
+              <button type="button" data-zoom="out" aria-label="缩小" title="缩小">−</button>
+              <button class="model-reset" type="button" aria-label="复位视角">复位</button>
+            </div>
+          </div>
+          <figcaption class="model-caption">
+            <div class="model-actions" role="group" aria-label="选择美杜莎动作" hidden>
+              <button type="button" data-clip="MedusaBreathe" aria-pressed="true">待机</button>
+              <button type="button" data-clip="MedusaJoy" aria-pressed="false">喜</button>
+              <button type="button" data-clip="MedusaAnger" aria-pressed="false">怒</button>
+              <button type="button" data-clip="MedusaSorrow" aria-pressed="false">哀</button>
+              <button type="button" data-clip="MedusaDelight" aria-pressed="false">乐</button>
+              <button type="button" data-clip="MedusaReflect" aria-pressed="false">沉思</button>
+              <button type="button" data-clip="MedusaGreet" aria-pressed="false">打招呼</button>
+              <button type="button" data-clip="MedusaDrowse" aria-pressed="false">打瞌睡</button>
+            </div>
+            <div class="model-details">
+              <span>非商用展示</span>
+              <span class="model-status" role="status" hidden>正在载入 3D 模型…</span>
+              <noscript>开启 JavaScript 后可体验 3D 舞台。</noscript>
+              <a href="#medusa">观看动作实录 ↓</a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="medusa" class="case-section" aria-labelledby="case-title">
+      <div class="wrap">
+        <div class="case-heading">
+          <div><h2 id="case-title">动作实录<span class="period">。</span></h2></div>
+          <p>七段舞台录屏，从动作起势一直录到美杜莎回到待机。</p>
+        </div>
+        <div class="laboratory" id="laboratory">
+          <figure class="stage" aria-labelledby="stage-title">
+            <div class="stage-top">
+              <span id="stage-title"><i></i> 实模动作录屏</span>
+              <span id="clip-duration"></span>
+            </div>
+            <video id="case-video" src="assets/medusa/joy.mp4" poster="assets/medusa/joy.webp"
+              aria-label="美杜莎动作 · 开怀舒展" playsinline preload="metadata" controls></video>
+            <p id="video-status" role="status" hidden>播放器暂时无法载入。可用下方链接直接打开视频。</p>
+            <figcaption id="stage-caption"><span>美杜莎舞台 · 构建 248 同源模型</span><a id="video-link" href="assets/medusa/joy.mp4">打开视频 ↗</a></figcaption>
+          </figure>
+          <div class="case-controls">
+            <div class="emotion-tabs" role="tablist" aria-label="选择动作录屏" id="emotion-tabs">
+              <button type="button" role="tab" id="tab-joy" aria-controls="motion-panel" aria-selected="true" data-emotion="joy"><img src="assets/medusa/joy.webp" width="320" height="180" alt="" loading="lazy"><span>喜</span></button>
+              <button type="button" role="tab" id="tab-anger" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="anger"><img src="assets/medusa/anger.webp" width="320" height="180" alt="" loading="lazy"><span>怒</span></button>
+              <button type="button" role="tab" id="tab-sorrow" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="sorrow"><img src="assets/medusa/sorrow.webp" width="320" height="180" alt="" loading="lazy"><span>哀</span></button>
+              <button type="button" role="tab" id="tab-delight" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="delight"><img src="assets/medusa/delight.webp" width="320" height="180" alt="" loading="lazy"><span>乐</span></button>
+              <button type="button" role="tab" id="tab-reflect" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="reflect"><img src="assets/medusa/reflect.webp" width="320" height="180" alt="" loading="lazy"><span>沉思</span></button>
+              <button type="button" role="tab" id="tab-greet" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="greet"><img src="assets/medusa/greet.webp" width="320" height="180" alt="" loading="lazy"><span>打招呼</span></button>
+              <button type="button" role="tab" id="tab-drowse" aria-controls="motion-panel" aria-selected="false" tabindex="-1" data-emotion="drowse"><img src="assets/medusa/drowse.webp" width="320" height="180" alt="" loading="lazy"><span>打瞌睡</span></button>
+            </div>
+            <div id="motion-panel" role="tabpanel" aria-labelledby="tab-joy" tabindex="0">
+              <p class="motion-tag" id="motion-tag">喜</p>
+              <h3 id="motion-title">开怀舒展</h3>
+              <p id="motion-description">微笑渐起，肩臂舒展，视线随着手势转动，再缓缓收回。</p>
+            </div>
+            <noscript><p>继续观看 <a href="assets/medusa/anger.mp4">怒</a> · <a href="assets/medusa/sorrow.mp4">哀</a> · <a href="assets/medusa/delight.mp4">乐</a> · <a href="assets/medusa/reflect.mp4">沉思</a> · <a href="assets/medusa/greet.mp4">打招呼</a> · <a href="assets/medusa/drowse.mp4">打瞌睡</a></p></noscript>
+          </div>
+        </div>
+        <p class="case-note">录屏采集自本站三维舞台，使用全屋智能家居构建 248 的同源角色与动作。</p>
+      </div>
+    </section>
+
+    <section id="craft" class="craft" aria-labelledby="craft-title">
+      <div class="wrap craft-layout">
+        <div class="craft-intro"><p class="section-label">制作方法</p><h2 id="craft-title">从手势细节，<br>到桌面上的回应。</h2><p>把手部、表情与衣发的调整做进同一套骨骼，再用原生窗口检验最终表现。</p></div>
+        <div class="craft-list">
+          <article><span class="craft-symbol" aria-hidden="true">⌁</span><div><h3>让手势看起来自然</h3><p>从手部设计稿到实模四视图，调顺高位手的前臂与手腕，拉长四指，并调整拇指对掌。抬手时，腕线与指节自然接续。</p></div></article>
+          <article><span class="craft-symbol" aria-hidden="true">◒</span><div><h3>让全身动作有余韵</h3><p>先编排躯干、肩肘和指尖，再给发梢、长袖、裙摆分别安排跟随。动作幅度增加时，每一层仍有自己的节奏。</p></div></article>
+          <article><span class="craft-symbol" aria-hidden="true">↺</span><div><h3>让回应回得去待机</h3><p>从 Blender 导出 GLB，在原生桌宠渲染路径里验证动作。表演结束，角色可以回到待机，等待下一次互动。</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skill-section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="section-label">Codex 技能</p>
+        <h2 id="skills-title">数字人建模与动作<span class="period">。</span></h2>
+        <div class="skill-options">
+          <article class="skill-download">
+            <h3>数字人建模</h3>
+            <p>从参考和角色模型出发，完成外观、绑定、原生验收、真实录屏与网页交付。</p>
+            <p class="skill-command"><code>$ai-digital-human-modeling</code></p>
+            <a class="button primary" href="assets/downloads/ai-digital-human-modeling-v1.0.0.zip" download>下载建模技能 <span aria-hidden="true">↓</span></a>
+            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install-modeling">查看建模安装源码 ↗</a>
+          </article>
+          <article class="skill-download">
+            <h3>数字人情绪动作</h3>
+            <p>一套共用制作流程和四个情绪子技能，覆盖手姿、眉眼、衣发跟随与 GLB 导出。</p>
+            <p class="skill-command"><code>$digital-human-emotion-motion</code></p>
+            <a class="button primary" href="assets/downloads/digital-human-emotion-skills-v1.0.0.zip" download>下载情绪动作技能 <span aria-hidden="true">↓</span></a>
+            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install">查看情绪安装源码 ↗</a>
+          </article>
+        </div>
+        <p class="install-hint">macOS 解压后，双击 <kbd>install.command</kbd> 安装。</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="wordmark" href="#top"><span class="mark" aria-hidden="true"></span><strong>美杜莎·数字人</strong></a>
+      <p class="rights">© 2026 Nankong · 美杜莎（彩鳞）为《斗破苍穹》角色，角色及模型权利归各自权利人。
+        <a href="https://3d.znzmo.com/3dmoxing/1178568587.html">原模型由「曾经的曾经」上传至知末</a>。本页美杜莎 3D 模型、图像与录屏仅供非商用展示。</p>
+      <a class="back-top" href="#top">返回顶部 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "medusa-digital-human-site",
+  "private": true,
+  "scripts": {
+    "build:hero": "esbuild hero-viewer.js --bundle --format=iife --minify --legal-comments=eof --outfile=assets/hero-viewer.bundle.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}
