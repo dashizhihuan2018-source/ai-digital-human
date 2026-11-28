@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17151b">
+  <meta name="description" content="全屋智能家居半身桌宠案例。以原始 MAX 发丝样条恢复古风角色的发型，展示桌面预览中的表情与动作。">
+  <title>古风角色 · AI 数字人</title>
+  <link rel="stylesheet" href="../medusa/style.css">
+  <link rel="stylesheet" href="portrait.css">
+  <script src="portrait.js" defer></script>
+</head>
+<body class="portrait-page">
+  <a class="skip" href="#main">跳至主要内容</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="wordmark" href="../medusa/"><span class="mark" aria-hidden="true"></span><strong>AI 数字人</strong></a>
+      <nav aria-label="主导航"><a href="../medusa/">美杜莎</a><a href="#evidence">制作记录</a></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="portrait-layout" aria-labelledby="character-title">
+      <div class="character-intro">
+        <p class="eyebrow"><span></span> 全屋智能家居 · 半身桌宠</p>
+        <h1 id="character-title">古风角色</h1>
+        <p>原始发丝样条保留了中分发际线、鬓边卷度和散落的发尾。桌宠以颔首、微笑、眨眼和口型回应互动。</p>
+        <a class="button primary" href="#motion">观看动作实录 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="character-media">
+        <img id="portrait" src="images/preview.webp" alt="古风角色正面，黑色中分卷发，额饰花钿，佩戴金色耳坠" width="960" height="924" fetchpriority="high">
+        <figcaption id="angle-buttons" class="gallery-options" aria-label="查看角色角度与表情">
+          <button type="button" aria-pressed="true" data-frame="preview" data-alt="古风角色正面，黑色中分卷发，额饰花钿，佩戴金色耳坠">正面</button>
+          <button type="button" aria-pressed="false" data-frame="turned" data-alt="人物侧转，鬓发沿面颊卷起，露出雕花项圈和金色耳坠">侧转</button>
+          <button type="button" aria-pressed="false" data-frame="sleep" data-alt="古风角色垂首闭目休息">闭目</button>
+          <button type="button" aria-pressed="false" data-frame="speak" data-alt="古风角色说话状态，嘴唇微张">说话</button>
+        </figcaption>
+      </figure>
+    </section>
+    <section id="motion" class="portrait-section" aria-labelledby="motion-title">
+      <h2 id="motion-title">动作实录</h2>
+      <p>从同一个原生桌宠预览录制，依次展示侧转、微笑和颔首。</p>
+      <video controls playsinline preload="metadata" poster="images/turned.webp" aria-label="古风角色原生预览，侧转、微笑和颔首">
+        <source src="images/motion.mp4" type="video/mp4">
+      </video>
+    </section>
+    <section id="evidence" class="portrait-section" aria-labelledby="evidence-title">
+      <h2 id="evidence-title">制作记录</h2>
+      <ul>
+        <li>从源文件回读 9 组头发对象、5,293 条 Bezier 样条和 154,729 个控制点。</li>
+        <li>脸、肩胸、眼球、睫毛、颈饰和耳饰保留原网格。脸和肩胸使用原 4K 漫反射，眼球使用原 2K 漫反射。</li>
+        <li>原生预览验证 12 项动作与表情，包括待机、聆听、思考、说话、颔首致意和休息。</li>
+      </ul>
+      <p>非商用技术展示。角色沿用来源提供的通用称呼。<a class="source-link" href="https://lands.znzmo.com/3dmoxing/1199634633.html">知末模型 1199634633</a></p>
+    </section>
+  </main>
+</body>
+</html>

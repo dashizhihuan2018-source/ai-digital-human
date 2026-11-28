@@ -1,0 +1,20 @@
+.portrait-page { background:#17151b; color:#f5eae3; }
+.portrait-page .topbar { background:#1c1920; }
+.portrait-layout { display:grid; grid-template-columns:minmax(270px,.86fr) minmax(0,1.14fr); align-items:center; gap:clamp(28px,5.5vw,84px); padding-block:clamp(42px,7vw,92px); }
+.character-intro h1 { font:500 clamp(45px,8vw,112px)/1.16 "Songti SC","Noto Serif SC",serif; margin-block:.25em .24em; letter-spacing:.06em; }
+.character-intro > p:not(.eyebrow) { max-width:26em; line-height:1.9; color:#d9c8c4; margin-bottom:28px; }
+.character-media { margin:0; border:1px solid #42383f; border-radius:16px; overflow:hidden; background:#1d1922; }
+.character-media img { display:block; width:100%; height:auto; aspect-ratio:960/924; }
+.gallery-options { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:7px; padding:12px; border-top:1px solid #40353e; }
+.gallery-options button { color:#f5eae3; font:inherit; padding:9px 2px; background:#29232d; border:1px solid #493b46; border-radius:6px; cursor:pointer; }
+.gallery-options button[aria-pressed="true"],.gallery-options button:hover { background:#4a3335; color:#ffd7b6; border-color:#b78468; }
+.portrait-section { border-top:1px solid #41363f; padding-block:45px 62px; }
+.portrait-section h2 { font:500 clamp(30px,5vw,49px)/1.2 "Songti SC","Noto Serif SC",serif; margin:0 0 14px; }
+.portrait-section p,.portrait-section li { color:#d4c4c0; line-height:1.85; }
+.portrait-section video { display:block; width:min(100%,590px); margin-top:24px; background:#202025; border-radius:12px; }
+.source-link { text-decoration:underline; text-underline-offset:4px; margin-left:.5em; }
+@media(max-width:720px) {
+  .portrait-layout { grid-template-columns:1fr; padding-block:48px; }
+  .character-intro > p:not(.eyebrow) { margin-bottom:20px; }
+  .portrait-section { padding-block:34px; }
+}
