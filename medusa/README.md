@@ -1,6 +1,6 @@
 # 美杜莎·数字人
 
-网站展示全屋智能家居桌面助理美杜莎 V3 的真实三维角色、七段完整的实模动作录屏，以及两套 Codex 技能。
+网站展示全屋智能家居桌面助理美杜莎 V3 的三维角色、七段实模动作录屏，以及声线、人设与动作的制作经验和三套 Codex 技能。
 
 ## 预览与更新
 
@@ -12,10 +12,17 @@
 
 ## 技能安装
 
+- 私人助理角色在 `install-assistant/`，安装后调用 `$private-assistant-character`。包含声线、人设、桌宠动作、隔离验收和美杜莎案例。
 - 数字人建模在 `install-modeling/`，安装后调用 `$ai-digital-human-modeling`。
 - 数字人情绪动作在 `install/`，内含总技能与四个情绪子技能，安装后调用 `$digital-human-emotion-motion`。
 
-在 macOS 解压需要的 ZIP 后，打开其中的 `install.command`。修改技能源码时同步重建相应 ZIP，并校验解压安装与网页下载内容。
+在 macOS 解压需要的 ZIP 后，打开其中的 `install.command`。修改技能源码时同步重建相应 ZIP，并校验解压安装与网页下载内容。新版私人助理包的打包命令从 `medusa/` 运行。
+
+```sh
+COPYFILE_DISABLE=1 zip -X -r assets/downloads/private-assistant-character-v1.0.0.zip install-assistant -x '*/.DS_Store'
+```
+
+发行时使用新版本文件名，更新网页下载地址和安装包说明。公开技能保留可复用流程与已验证的案例摘要。
 
 ## 版权与来源
 

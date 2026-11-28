@@ -185,12 +185,19 @@ h2 { font-size: clamp(37px, 5.2vw, 72px); letter-spacing: -.07em; line-height: 1
 .craft-symbol { color: var(--clay); font-size: 26px; text-align: center; line-height: 1.25; }
 .craft-list h3 { font-size: 18px; }
 .craft-list p { color: var(--muted); font-size: 14px; line-height: 1.75; margin: 6px 0 0; }
+.assistant-case { margin-top: clamp(42px, 7vw, 84px); }
+.assistant-case > p { color: var(--muted); line-height: 1.75; }
+.assistant-tracks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-top: 24px; }
+.assistant-tracks article { border-top: 1px solid #cbb9ac; padding-top: 15px; }
+.assistant-tracks h3 { font-size: 18px; }
+.assistant-tracks p { color: var(--muted); font-size: 15px; line-height: 1.75; margin: 6px 0 0; }
 .skill-section { padding: 72px 0; border-top: 1px solid var(--border); }
 .skill-section h2 { font-size: clamp(35px, 4.9vw, 60px); }
-.skill-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; margin: 30px 0 16px; }
-.skill-download { border: 1px solid var(--border); border-radius: 6px; padding: clamp(18px, 3vw, 32px); }
+.skill-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin: 30px 0 16px; }
+.skill-download { display: flex; flex-direction: column; align-items: flex-start; border: 1px solid var(--border); border-radius: 6px; padding: clamp(18px, 3vw, 32px); }
 .skill-download h3 { font-size: 22px; }
 .skill-download p, .install-hint { color: var(--muted); line-height: 1.75; font-size: 15px; }
+.skill-command { margin-top: auto; max-width: 100%; }
 .skill-command code { font-size: .88em; overflow-wrap: anywhere; }
 .skill-download .source-link { display: table; margin-top: 8px; }
 .source-link { color: var(--clay); font-size: 13px; padding: 6px 0; display: inline-block; text-decoration: underline; text-underline-offset: 3px; }
@@ -209,8 +216,8 @@ h2 { font-size: clamp(37px, 5.2vw, 72px); letter-spacing: -.07em; line-height: 1
 
 }
 @media (max-width: 700px) {
-  .craft-layout, .laboratory, .skill-options { grid-template-columns: 1fr; }
-  .skill-options { gap: 14px; }
+  .craft-layout, .laboratory, .skill-options, .assistant-tracks { grid-template-columns: 1fr; }
+  .skill-options, .assistant-tracks { gap: 14px; }
   .craft-layout { gap: 25px; }
   #motion-panel { min-height: 154px; }
 }

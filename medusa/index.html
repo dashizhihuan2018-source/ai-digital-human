@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#130e10">
-  <meta name="description" content="走进美杜莎的实时三维舞台，自由旋转缩放，点演喜怒哀乐与日常动作。">
+  <meta name="description" content="体验美杜莎实时三维舞台与七种动作，查看私人助理的声线、人设和动作制作经验，下载 Codex 技能。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="美杜莎·数字人">
   <meta property="og:description" content="美杜莎实时三维舞台，支持旋转缩放和七种动作点播。">
@@ -135,12 +135,39 @@
           <article><span class="craft-symbol" aria-hidden="true">↺</span><div><h3>让回应回得去待机</h3><p>从 Blender 导出 GLB，在原生桌宠渲染路径里验证动作。表演结束，角色可以回到待机，等待下一次互动。</p></div></article>
         </div>
       </div>
+      <div class="wrap assistant-case" id="assistant" aria-labelledby="assistant-title" role="region">
+        <h2 id="assistant-title">美杜莎私人助理<span class="period">。</span></h2>
+        <p>在 macOS「我的 → 私人助理」中，外观、声线与人设可分别切换。动作跟随当前桌宠，聆听和说话等状态由会话触发。</p>
+        <div class="assistant-tracks">
+          <article>
+            <h3>声线</h3>
+            <p>按镜头、字幕和说话人切点定位《斗破苍穹·三年之约》中的彩鳞对白。分离背景声后，把单人短段与对应文本配对，用本机 TTS 合成新句。逐项验证播放完成、缺参考时的回退，以及恢复素材后能否重新生效。</p>
+          </article>
+          <article>
+            <h3>人设</h3>
+            <p>把彩鳞的冷静、果断与护族担当转成原创现代助理对话。单独定义显示身份、唤醒词与对话风格。切换声线后回读人设，使用只读查询和带否定的指令检验设备分流。</p>
+          </article>
+          <article>
+            <h3>动作</h3>
+            <p>保留认可的网格、纹理和蒙皮，新增 14 个片段，包括三种常态、七种轮换动作和四种短表情。会话优先于自动轮换。逐个点播，检查全身与半身构图，以及播完回到当前状态。</p>
+          </article>
+        </div>
+        <p class="case-note">构建 240 在原生窗口确认三项选择，并完成本机合成播放。构建 248 验证新版桌宠动作。真人麦克风唤醒、用户听感和逐音节口型仍待单独验证。</p>
+        <a class="source-link" href="#assistant-skill">获取私人助理技能 ↓</a>
+      </div>
     </section>
     <section id="skills" class="skill-section" aria-labelledby="skills-title">
       <div class="wrap">
         <p class="section-label">Codex 技能</p>
-        <h2 id="skills-title">数字人建模与动作<span class="period">。</span></h2>
+        <h2 id="skills-title">数字人制作技能<span class="period">。</span></h2>
         <div class="skill-options">
+          <article class="skill-download" id="assistant-skill">
+            <h3>私人助理角色</h3>
+            <p>制作声线、对话人设和三维桌宠动作，按美杜莎案例验证原生接入与旧配置兼容。</p>
+            <p class="skill-command"><code>$private-assistant-character</code></p>
+            <a class="button primary" href="assets/downloads/private-assistant-character-v1.0.0.zip" download>下载私人助理技能 <span aria-hidden="true">↓</span></a>
+            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install-assistant">查看助理安装源码 ↗</a>
+          </article>
           <article class="skill-download">
             <h3>数字人建模</h3>
             <p>从参考和角色模型出发，完成外观、绑定、原生验收、真实录屏与网页交付。</p>

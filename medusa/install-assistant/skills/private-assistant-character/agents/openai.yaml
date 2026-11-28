@@ -1,0 +1,4 @@
+interface:
+  display_name: "私人助理角色"
+  short_description: "制作并验收私人助理的声线、对话人设和三维桌宠动作与表情"
+  default_prompt: "用 $private-assistant-character 根据我提供的角色参考和授权素材制作声线、人设与动作，并在原生 App 隔离验收。"
