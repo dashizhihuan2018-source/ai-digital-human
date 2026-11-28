@@ -1,4 +1,4 @@
-数字人技能套装 · Codex 公开版 V1.0.0
+数字人技能套装 · Codex 公开版 V1.0.1
 
 在 macOS 解压整个 ZIP，双击 install.command。
 也可在解压目录运行 bash install.command。
@@ -15,7 +15,7 @@
   $digital-human-delivery
 
 默认安装到 ~/.codex/skills。设置 CODEX_HOME 时使用该目录。
-安装器识别官网此前发布的三套 V1.0.0 技能，会先将其备份到技能目录旁。
+安装器识别官网旧的单项包和整合版 V1.0.0，会先将其备份到技能目录旁。
 自定义或其他同名版本将原样保留。可用 bash install.command --dest <独立目录> 安装到其他位置。
 使用独立 Codex 环境时，可把 CODEX_HOME 指向该环境的根目录，再在该根目录的 skills 中安装。
 

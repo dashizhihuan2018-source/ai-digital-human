@@ -12,17 +12,18 @@
 
 ## 技能安装
 
-当前公开版 V1.0.0 的安装源码在 `install-suite/`。主技能为 `$ai-digital-human-modeling`，五个分技能分别是角色造型、骨骼与蒙皮、动作与表情、私人助理角色和导出与展示。
+当前公开版 V1.0.1 的安装源码在 `install-suite/`。主技能为 `$ai-digital-human-modeling`，五个分技能分别是角色造型、骨骼与蒙皮、动作与表情、私人助理角色和导出与展示。
 
 在 macOS 解压 ZIP 后，打开其中的 `install.command`。安装器会备份识别到的旧公开版，同名自定义版本原样保留。先确认源码和安装包对应，再验证新安装、已识别旧版的迁移及 Codex 的六个技能入口。打包命令从 `medusa/` 运行。
 
 ```sh
-COPYFILE_DISABLE=1 zip -X -r assets/downloads/ai-digital-human-suite-v1.0.0.zip install-suite -x '*/.DS_Store'
+COPYFILE_DISABLE=1 zip -X -r assets/downloads/ai-digital-human-suite-v1.0.1.zip install-suite -x '*/.DS_Store'
 ```
 
-发行时使用新版本文件名，更新网页下载地址和安装包说明。公开技能保留可复用流程与公开案例摘要。原先三个独立 ZIP 保留历史直接链接。
+发行时使用新版本文件名，更新网页下载地址和安装包说明。公开技能保留可复用流程与公开案例摘要。旧版 ZIP 保留原来的直接链接。
 
-[公开安装包 V1.0.0](assets/downloads/ai-digital-human-suite-v1.0.0.zip) 的大小为 43,566 字节，SHA-256 为 `680ab5bdfcdb5a26987510fac7e5262f969f0de2e30809ec63238fa12db363cb`。
+
+[公开安装包 V1.0.1](assets/downloads/ai-digital-human-suite-v1.0.1.zip) 的大小为 46,140 字节，SHA-256 为 `978f223a5fa5f5770ebccf97751bf45b7cb317691bffac7b116c7e820fea862f`。
 
 ## 版权与来源
 

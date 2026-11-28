@@ -12,7 +12,9 @@ description: 为数字人私人助理制作或替换声线与原创对话人设�
 | 声线 | [声源、试听与切换](references/voice.md)。保留合法用途内的来源和短段文本配对，验证同句试听、实际播完、重开与缺参考回退 |
 | 人设 | [人设与对话行为](references/persona.md)。交原创角色卡、有效条件、身份路由和用户纠正用例，分别核对声线变化时的人设保留 |
 | 桌宠外观 | 按宿主选择 [实时或透明预渲染资源](references/host-avatar-adaptation.md)。需要重建网格用 [角色造型](../digital-human-appearance/SKILL.md) |
-| 动作 | 从现有动作清单选择并映射待机、聆听、思考、说话。需重做骨骼片段、表情和会话抢占时用 [动作与表情](../digital-human-emotion-motion/SKILL.md) |
+| 动作 | 向 [动作与表情](../digital-human-emotion-motion/SKILL.md) 取得片段清单，在原生入口回读各状态的实际剪辑 |
 | 宿主接入 | [隔离、回归与接入](references/integration.md)。分别验证实际原生入口、旧配置、无效值、缺模型/音频、聊天服务降级和切回旧角色 |
 
 人设控制表达。权限、设备目标消歧、否定识别和执行回执沿用宿主，使用只读查询或模拟写入做隔离验证。分别标记本机合成、正常回放、真人麦克风、本人试听和正式版状态。遇到某一路资料不足，在该路留待核项，可独立验收其余已授权的工作。参考 [美杜莎与菲菲案例](references/case-evidence.md) 及实际版本回执。
+
+同时涉及音频和剪辑时，按[原生会话交接](references/integration.md#原生会话交接)的状态所有权和组合用例取证。

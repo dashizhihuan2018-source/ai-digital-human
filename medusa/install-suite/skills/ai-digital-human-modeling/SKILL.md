@@ -13,11 +13,13 @@ description: 统筹从参考或现有模型制作可编辑三维数字人，或�
 | --- | --- | --- |
 | 长相、头身、发丝、皮肤、服装、局部网格或饰品 | [角色造型](subskills/digital-human-appearance/SKILL.md) | 可编辑静帧、造型对照、锁定范围 |
 | 骨架、控制器、换绑、蒙皮和服装跟随 | [骨骼与蒙皮](subskills/digital-human-rigging/SKILL.md) | 已绑定母本、骨骼与形变合同、压力姿势证据 |
-| 3D 动作、手势、脸部表情、动作重定向、轮播状态机 | [动作与表情](subskills/digital-human-emotion-motion/SKILL.md) | 独立命名片段、变形与目标运行端验证 |
-| 声线、人设、唤醒与桌宠接入 | [私人助理角色](subskills/private-assistant-character/SKILL.md) | 独立设置与隔离原生验收；动作需要重做时使用动作分技能 |
+| 3D 动作、手势、脸部表情、动作重定向、剪辑与轮播 | [动作与表情](subskills/digital-human-emotion-motion/SKILL.md) | 片段清单、各片段可抢占条件和实际播放证据 |
+| 声线、人设、唤醒与原生会话接入 | [私人助理角色](subskills/private-assistant-character/SKILL.md) | 接收片段清单，接通声线、人设和宿主端状态并验证组合 |
 | FBX/GLB 回读、引擎或网页加载、实模录屏与发布 | [导出与展示](subskills/digital-human-delivery/SKILL.md) | 同版导出、回读、运行或上线证据 |
 
 按实际范围读相应分技能。单图驱动的人像视频走可用的 LivePortrait 或其他口播流程。仅要求二维视频时，按身份稳定性、连续表演及所需音画同步验收；要可编辑网格、蒙皮或多角度交互时才走三维建模。蓝宝等已有宿主按专用角色合同工作，通用方法在需要时调用分技能。
+
+声线、人设和动作同时接入时，用[原生会话交接](subskills/private-assistant-character/references/integration.md#原生会话交接)把片段清单、宿主状态和组合验收连起来。单改其中一项时，从已验收的母本与接口开始，只复验受影响的交接。
 
 ## 母本与交付合同
 

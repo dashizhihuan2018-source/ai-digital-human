@@ -26,14 +26,21 @@ for name in "${subskills[@]}"; do
 done
 
 matches_legacy() {
-    local name="$1" folder="$destination/$1" manifest="$package_dir/legacy/$1.sha256"
-    [[ -d "$folder" && ! -L "$folder" && -f "$manifest" ]] || return 1
+    local name="$1" folder="$destination/$1" manifest
+    local actual="$lock/current.sha256"
+    [[ -d "$folder" && ! -L "$folder" ]] || return 1
     [[ -z "$(/usr/bin/find "$folder" -type l -print -quit)" ]] || return 1
     (
         cd "$folder"
         /usr/bin/find . -type f ! -name .DS_Store -print | LC_ALL=C /usr/bin/sort |
             while IFS= read -r file; do /usr/bin/shasum -a 256 "$file"; done
-    ) | /usr/bin/diff -q "$manifest" - >/dev/null
+    ) >"$actual" || return 1
+    for manifest in "$package_dir/legacy/$name.sha256" "$package_dir/legacy/$name".*.sha256; do
+        if [[ -f "$manifest" ]] && /usr/bin/diff -q "$manifest" "$actual" >/dev/null; then
+            return 0
+        fi
+    done
+    return 1
 }
 
 conflict() {
