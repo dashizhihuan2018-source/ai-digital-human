@@ -1,0 +1,4 @@
+interface:
+  display_name: "私人助理角色"
+  short_description: "制作私人助理声线与人设，验证唤醒、动作映射和原生宿主接入"
+  default_prompt: "用 $private-assistant-character 根据我提供的参考和授权素材制作声线或人设，并验证宿主兼容与实际播报。"

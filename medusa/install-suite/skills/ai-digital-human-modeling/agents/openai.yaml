@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI 数字人建模"
+  short_description: "统筹可编辑数字人的造型、绑定、动作、助理接入与同版交付"
+  default_prompt: "使用 $ai-digital-human-modeling 依据角色参考与宿主选择分技能，定义母本、交付格式和各阶段验收。"
+
+policy:
+  allow_implicit_invocation: true

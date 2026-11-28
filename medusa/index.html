@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#130e10">
-  <meta name="description" content="体验美杜莎实时三维舞台与七种动作，查看私人助理的声线、人设和动作制作经验，下载 Codex 技能。">
+  <meta name="description" content="体验美杜莎三维舞台与动作实录，查看声线、人设和动作制作经验，下载六项 Codex 数字人技能套装。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="美杜莎·数字人">
   <meta property="og:description" content="美杜莎实时三维舞台，支持旋转缩放和七种动作点播。">
@@ -153,37 +153,30 @@
           </article>
         </div>
         <p class="case-note">构建 240 在原生窗口确认三项选择，并完成本机合成播放。构建 248 验证新版桌宠动作。真人麦克风唤醒、用户听感和逐音节口型仍待单独验证。</p>
-        <a class="source-link" href="#assistant-skill">获取私人助理技能 ↓</a>
+        <a class="source-link" href="#assistant-skill">获取数字人技能套装 ↓</a>
       </div>
     </section>
     <section id="skills" class="skill-section" aria-labelledby="skills-title">
       <div class="wrap">
         <p class="section-label">Codex 技能</p>
-        <h2 id="skills-title">数字人制作技能<span class="period">。</span></h2>
+        <h2 id="skills-title">数字人制作技能套装<span class="period">。</span></h2>
         <div class="skill-options">
           <article class="skill-download" id="assistant-skill">
-            <h3>私人助理角色</h3>
-            <p>制作声线、对话人设和三维桌宠动作，按美杜莎案例验证原生接入与旧配置兼容。</p>
-            <p class="skill-command"><code>$private-assistant-character</code></p>
-            <a class="button primary" href="assets/downloads/private-assistant-character-v1.0.0.zip" download>下载私人助理技能 <span aria-hidden="true">↓</span></a>
-            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install-assistant">查看助理安装源码 ↗</a>
-          </article>
-          <article class="skill-download">
-            <h3>数字人建模</h3>
-            <p>从参考和角色模型出发，完成外观、绑定、原生验收、真实录屏与网页交付。</p>
+            <h3>一个主技能，五个分技能</h3>
+            <p>主技能统筹模型、分工和验收。只做一项时，可在 Codex 中直接调用对应的分技能。</p>
             <p class="skill-command"><code>$ai-digital-human-modeling</code></p>
-            <a class="button primary" href="assets/downloads/ai-digital-human-modeling-v1.0.0.zip" download>下载建模技能 <span aria-hidden="true">↓</span></a>
-            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install-modeling">查看建模安装源码 ↗</a>
+            <a class="button primary" href="assets/downloads/ai-digital-human-suite-v1.0.0.zip" download>下载技能套装 V1.0.0 <span aria-hidden="true">↓</span></a>
+            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install-suite">查看公开安装源码 ↗</a>
           </article>
-          <article class="skill-download">
-            <h3>数字人情绪动作</h3>
-            <p>一套共用制作流程和四个情绪子技能，覆盖手姿、眉眼、衣发跟随与 GLB 导出。</p>
-            <p class="skill-command"><code>$digital-human-emotion-motion</code></p>
-            <a class="button primary" href="assets/downloads/digital-human-emotion-skills-v1.0.0.zip" download>下载情绪动作技能 <span aria-hidden="true">↓</span></a>
-            <a class="source-link" href="https://github.com/dashizhihuan2018-source/ai-digital-human/tree/main/medusa/install">查看情绪安装源码 ↗</a>
-          </article>
+          <dl class="skill-tracks" aria-label="五个分技能">
+            <div><dt>角色造型</dt><dd>面部、头身、原生发丝、衣鞋与饰品</dd></div>
+            <div><dt>骨骼与蒙皮</dt><dd>角色绑定、服装权重与形变验证</dd></div>
+            <div><dt>动作与表情</dt><dd>手势、喜怒哀乐、待机、轮换与打断</dd></div>
+            <div><dt>私人助理角色</dt><dd>声线、人设、唤醒与原生桌宠接入</dd></div>
+            <div><dt>导出与展示</dt><dd>FBX／GLB 回读、实模录屏和网页交付</dd></div>
+          </dl>
         </div>
-        <p class="install-hint">macOS 解压后，双击 <kbd>install.command</kbd> 安装。</p>
+        <p class="install-hint">macOS 解压后打开 <kbd>install.command</kbd>，再开一个 Codex 对话。</p>
       </div>
     </section>
   </main>
